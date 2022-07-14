@@ -14,12 +14,6 @@ Sistem ini dibangun menggunaka:
 -   Auth menggunakan [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
 -   fronend menggunakan [Tailwindcss](https://tailwindcss.com/)
 
-<p align="center">
-<img src="https://tailwindcss.com/favicons/favicon-16x16.png?v=3" width="100">
-<img src="https://github.com/laravel/breeze/blob/1.x/art/logo.svg" width="100">
-<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="100">
-</P>
-
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
