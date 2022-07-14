@@ -16,8 +16,9 @@ aplikasi ini diharapkan bisa berguna bagi instansi terkait dalam pemrosesan sura
 
 Sistem ini dibangun menggunaka:
 
--   framework [Laravel v9.x](https://laravel.com/docs/9.x/installation)
+-   framework [Laravel v9.x](https://laravel.com/docs/9.x/installation).
 -   [php v8.0.x](https://www.php.net/downloads.php#v8.0.21).
+-   Auth menggunakan [Laravel Breez](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
 
 ## Laravel Sponsors
 
