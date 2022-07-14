@@ -17,7 +17,8 @@ Sistem ini dibangun menggunaka:
 ## Instalation
 
 ```
-$ git clone https://github.com/salahulbain/sispemsu.git
+git clone https://github.com/salahulbain/sispemsu.git
+composer install
 ```
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
