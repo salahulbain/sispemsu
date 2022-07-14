@@ -14,7 +14,11 @@ Sistem ini dibangun menggunaka:
 -   Auth menggunakan [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
 -   Frontend menggunakan framework [Tailwindcss](https://tailwindcss.com/)
 
-## Laravel Sponsors
+## Instalation
+
+```
+$ git clone https://github.com/salahulbain/sispemsu.git
+```
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
