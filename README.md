@@ -9,10 +9,10 @@ aplikasi ini diharapkan bisa berguna bagi instansi terkait dalam pemrosesan sura
 
 Sistem ini dibangun menggunaka:
 
--   framework [Laravel v9.x](https://laravel.com/docs/9.x/installation).
--   [php v8.0.x](https://www.php.net/downloads.php#v8.0.21).
+-   Bahasa Pemrograman [php v8.0.x](https://www.php.net/downloads.php#v8.0.21).
+-   Framework [Laravel v9.x](https://laravel.com/docs/9.x/installation).
 -   Auth menggunakan [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
--   fronend menggunakan [Tailwindcss](https://tailwindcss.com/)
+-   Frontend menggunakan framework [Tailwindcss](https://tailwindcss.com/)
 
 ## Laravel Sponsors
 
