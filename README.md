@@ -18,6 +18,9 @@ Sistem ini dibangun menggunaka:
 
 ```
 git clone https://github.com/salahulbain/sispemsu.git
+```
+
+```
 composer install
 ```
 
