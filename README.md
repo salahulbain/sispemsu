@@ -18,7 +18,8 @@ Sistem ini dibangun menggunaka:
 
 -   framework [Laravel v9.x](https://laravel.com/docs/9.x/installation).
 -   [php v8.0.x](https://www.php.net/downloads.php#v8.0.21).
--   Auth menggunakan [Laravel Breez](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
+-   Auth menggunakan [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
+-   fronend menggunakan [Tailwindcss](https://tailwindcss.com/) <img src="https://tailwindcss.com/favicons/apple-touch-icon.png?v=3">
 
 ## Laravel Sponsors
 
