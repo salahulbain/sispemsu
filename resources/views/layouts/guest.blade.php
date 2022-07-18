@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} - Sistem Pemrosesan Surat</title>
 
     {{-- favicon --}}
     <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('frontend/favicon/apple-touch-icon.png') }}">
@@ -103,6 +103,26 @@
         </div>
     </div>
     {{ $slot }}
+
+    <footer class="py-12">
+        <div class="container">
+            <div class="flex flex-wrap -mx-3">
+                <div class="flex-shrink-0 w-full max-w-full mx-auto mt-2 mb-6 text-center lg:flex-0 lg:w-8/12">
+                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" width="100" />
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3">
+                <div class="w-8/12 max-w-full px-3 mx-auto mt-1 text-center flex-0">
+                    <p class="mb-0 text-slate-400">
+                        Copyright © {{ date('Y') }}
+                        Kementerian Komunikasi dan Informatika Republik Indonesia - Aceh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js for navbar collapse -->
+    <script src="{{ asset('frontend/js/navbar-collapse.js') }}" async></script>
 </body>
 
 </html>
