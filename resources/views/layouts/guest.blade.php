@@ -12,6 +12,10 @@
     <!-- Fonts and icons -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -49,30 +53,17 @@
                             <ul class="flex flex-col pl-0 mx-auto mb-0 list-none lg:flex-row xl:ml-auto">
                                 <li>
                                     <a class="flex items-center px-4 py-2 mr-2 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-size-sm text-slate-700 lg:px-2"
-                                        aria-current="page" href="../pages/dashboard.html">
-                                        <i class="mr-1 fa fa-chart-pie opacity-60"></i>
-                                        Dashboard
+                                        aria-current="page" href="javascript:void">
+                                        <i class="mr-1 fas fa-envelope-open-text opacity-60"></i>
+                                        Cek Surat
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="block px-4 py-2 mr-2 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-size-sm text-slate-700 lg:px-2"
-                                        href="../pages/profile.html">
-                                        <i class="mr-1 fa fa-user opacity-60"></i>
-                                        Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="block px-4 py-2 mr-2 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-size-sm text-slate-700 lg:px-2"
-                                        href="../pages/sign-up.html">
-                                        <i class="mr-1 fas fa-user-circle opacity-60"></i>
-                                        Sign Up
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="block px-4 py-2 mr-2 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-size-sm text-slate-700 lg:px-2"
-                                        href="../pages/sign-in.html">
-                                        <i class="mr-1 fas fa-key opacity-60"></i>
-                                        Sign In
+                                    <a type="button"
+                                        class="block px-4 py-2 mr-2 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-size-sm text-slate-700 lg:px-2"
+                                        href="javascript:void">
+                                        <i class="mr-1 fas fa-info-circle opacity-60"></i>
+                                        Info
                                     </a>
                                 </li>
                             </ul>
@@ -87,10 +78,11 @@
                 </li> -->
                             <ul class="hidden pl-0 mb-0 list-none lg:block lg:flex-row">
                                 <li>
-                                    <a href="https://www.creative-tim.com/product/soft-ui-dashboard-tailwind"
-                                        target="_blank"
-                                        class="leading-pro hover:scale-102 hover:shadow-soft-xs active:opacity-85 ease-soft-in text-size-xs tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray rounded-3.5xl mb-0 mr-1 inline-block cursor-pointer border-0 bg-transparent px-8 py-2 text-center align-middle font-bold uppercase text-white transition-all">Free
-                                        download</a>
+                                    <a href="/"
+                                        class="btn leading-pro hover:scale-102 hover:shadow-soft-xs active:opacity-85 ease-soft-in text-size-xs tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray rounded-3.5xl mb-0 mr-1 inline-block cursor-pointer border-0 bg-transparent px-8 py-2 text-center align-middle font-bold uppercase text-white transition-all">
+                                        <i class="mr-1 fas fa-key opacity-60"></i>
+                                        Sign In
+                                    </a>
                                 </li>
                             </ul>
                         </div>

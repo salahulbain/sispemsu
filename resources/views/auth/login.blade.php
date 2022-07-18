@@ -7,10 +7,10 @@
                         <div
                             class="flex flex-col w-full max-w-full px-3 mx-auto md:flex-0 shrink-0 md:w-6/12 lg:w-5/12 xl:w-4/12">
                             <div
-                                class="relative flex flex-col min-w-0 mt-20 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
+                                class="relative flex flex-col min-w-0 mb-10 mt-24 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
                                 <div class="p-6 pb-0 mb-0 bg-transparent border-b-0 rounded-t-2xl">
                                     <a href="/">
-                                        <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                                        <x-application-logo class="w-20 h-20 fill-current text-gray-500" width="100" />
                                     </a>
                                     <h3 class="relative z-10 font-bold text-transparent bg-gradient-cyan bg-clip-text">
                                         Welcome back</h3>
@@ -71,7 +71,8 @@
                             <div
                                 class="absolute top-0 hidden w-3/5 h-full -mr-32 overflow-hidden -skew-x-10 -right-40 rounded-bl-xl md:block">
                                 <div class="absolute inset-x-0 top-0 z-0 h-full -ml-16 bg-cover skew-x-10"
-                                    style="background-image: url('{{ asset('frontend/img/curved6.jpg') }}')"></div>
+                                    style="background-image: url('{{ asset('frontend/img/curved6.jpg') }}')">
+                                </div>
                             </div>
                         </div>
                     </div>
