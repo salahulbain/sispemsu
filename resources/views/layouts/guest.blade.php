@@ -102,6 +102,7 @@
             </div>
         </div>
     </div>
+
     {{ $slot }}
 
     <footer class="py-12">
