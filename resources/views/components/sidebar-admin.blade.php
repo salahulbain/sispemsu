@@ -94,8 +94,13 @@
     </div>
     <div class="sidenav-footer position-absolute w-100 bottom-0 ">
         <div class="mx-3">
-            <a class="btn bg-gradient-primary mt-4 w-100" href="#" type="button"><i
-                    class="material-icons me-2">logout</i>Logout</a>
+            <a class="btn bg-gradient-primary mt-4 w-100" href="#" type="button" onclick="event.preventDefault();
+            document.querySelector('#form-logout').submit();">
+                <i class="material-icons me-2">logout</i>Logout
+            </a>
         </div>
+        <form action="{{ route('logout') }}" method="post" id="form-logout">
+            @csrf
+        </form>
     </div>
 </aside>

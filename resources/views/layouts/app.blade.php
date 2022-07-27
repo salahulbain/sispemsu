@@ -21,9 +21,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- favicon --}}
     <x-favicon />
-    <title>
-        {{ config('app.name', 'SISPEMSU') }} -- {{ $title }}
-    </title>
+    <title> {{ config('app.name', 'SISPEMSU') }} -- {{ $title }} </title>
     @stack('addon-before-style')
     @include('includes.style')
     @stack('addon-after-style')
@@ -42,12 +40,10 @@
         {{-- end main content --}}
         <x-footer-admin />
     </main>
-
     @include('includes.plugin')
     @stack('addon-before-script')
     @include('includes.script')
     @stack('addon-after-script')
-
 </body>
 
 </html>
