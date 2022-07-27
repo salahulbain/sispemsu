@@ -39,6 +39,32 @@
         {{ $slot }}
         {{-- end main content --}}
         <x-footer-admin />
+        {{-- modal logout --}}
+        <!-- Modal -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-normal" id="logoutModalLabel">Logout ?</h5>
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="{{ route('logout') }}" method="post" id="form-logout">
+                        <div class="modal-body">
+                            @csrf
+                            <h5>Yakin ingin Logout ?</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bg-gradient-secondary"
+                                data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn bg-gradient-primary">Logout</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
     @include('includes.plugin')
     @stack('addon-before-script')
