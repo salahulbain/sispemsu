@@ -12,7 +12,21 @@
     @include('includes.style')
     @stack('addon-after-style')
     <style>
+        .user-log-out {
+            color: red !important;
+        }
+
+        .user-log-out>a {
+            color: red !important;
+        }
+
+        .user-log-out>a:hover {
+            color: white !important;
+            background-color: red;
+        }
+
         .user-log-out:hover {
+            color: white !important;
             background-color: red;
         }
     </style>
@@ -59,10 +73,11 @@
                             <span class="float-right text-muted text-sm">2 days</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer text-danger user-log-out">
+                        <button type="button" data-toggle="modal" data-target="#modalLogout"
+                            class="dropdown-item dropdown-footer user-log-out">
                             <i class="fas fa-sign-out-alt"></i>
                             Log Out
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -129,10 +144,12 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-circle text-info"></i>
-                                <p>Informational</p>
+                        <hr class="w-100">
+                        <li class="nav-item user-log-out">
+                            <a href="#modalLogout" type="button" data-target="#modalLogout" data-toggle="modal"
+                                class="nav-link">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Log Out</p>
                             </a>
                         </li>
                     </ul>
@@ -236,6 +253,31 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+
+        {{-- modal logOut --}}
+        <div class="modal fade" id="modalLogout" tabindex="-1" aria-labelledby="modalLogoutLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLogoutLabel">Log Out</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <div class="modal-body">
+                            <h5>Apakah anda yakin ingin malakukan logout?</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-danger shadow">Log Out</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {{-- ./modal logout --}}
 
         <!-- Main Footer -->
         <footer class="main-footer">
